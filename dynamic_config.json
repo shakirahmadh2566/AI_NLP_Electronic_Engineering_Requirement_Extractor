@@ -1,0 +1,130 @@
+{
+  "layer1": {
+    "functional_requirements": {
+      "enabled": true,
+      "description": "What the system must do",
+      "prompt_hint": "List functional requirements"
+    },
+    "constraints": {
+      "enabled": true,
+      "description": "Budget, timeline, technical limits",
+      "prompt_hint": "List constraints"
+    },
+    "performance_targets": {
+      "enabled": true,
+      "description": "Speed, accuracy, efficiency metrics",
+      "prompt_hint": "List performance targets"
+    },
+    "environmental_conditions": {
+      "enabled": true,
+      "description": "Temperature, humidity, outdoor/indoor",
+      "prompt_hint": "List environmental conditions"
+    },
+    "protections_safety": {
+      "enabled": true,
+      "description": "Safety requirements, protection circuits",
+      "prompt_hint": "List protection and safety requirements"
+    },
+    "success_goal": {
+      "enabled": true,
+      "description": "Main objective and success criteria",
+      "prompt_hint": "Define success goal"
+    }
+  },
+  "layer2": {
+    "sensing": {
+      "enabled": true,
+      "description": "Sensors and input detection",
+      "example": "Soil moisture sensor, temperature sensor"
+    },
+    "processing": {
+      "enabled": true,
+      "description": "Data processing and computation",
+      "example": "ESP32 MCU, ADC conversion"
+    },
+    "control": {
+      "enabled": true,
+      "description": "Control algorithms and logic",
+      "example": "Sampling schedule, threshold detection"
+    },
+    "communication": {
+      "enabled": true,
+      "description": "Data transmission protocols",
+      "example": "WiFi, MQTT, HTTP"
+    },
+    "power": {
+      "enabled": true,
+      "description": "Power supply and management",
+      "example": "Battery, charger, regulator"
+    },
+    "actuation": {
+      "enabled": true,
+      "description": "Motors, actuators, outputs",
+      "example": "Water pump, LED, buzzer"
+    },
+    "data_storage": {
+      "enabled": true,
+      "description": "Memory and data logging",
+      "example": "SPIFFS, SD card, EEPROM"
+    },
+    "user_interface": {
+      "enabled": true,
+      "description": "User interaction methods",
+      "example": "OLED display, buttons, LEDs"
+    },
+    "protection": {
+      "enabled": true,
+      "description": "Safety and protection circuits",
+      "example": "Enclosure, fuses, TVS diode"
+    }
+  },
+  "layer3_mapping": {
+    "sensing": "sensors_inputs",
+    "processing": "processor",
+    "control": "controller",
+    "communication": "communication_modules",
+    "power": "power_system",
+    "actuation": "actuators",
+    "data_storage": "data_storage",
+    "user_interface": "user_interface",
+    "protection": "protection_safety_circuits"
+  },
+  "layer3": {
+    "sensors_inputs": {
+      "enabled": true,
+      "description": "Temperature, humidity, motion, soil moisture sensors"
+    },
+    "processor": {
+      "enabled": true,
+      "description": "MCU, CPU, FPGA - ESP32 series"
+    },
+    "controller": {
+      "enabled": true,
+      "description": "PID, logic controllers, control algorithms"
+    },
+    "communication_modules": {
+      "enabled": true,
+      "description": "WiFi, Bluetooth, LoRa, Zigbee modules"
+    },
+    "power_system": {
+      "enabled": true,
+      "description": "Batteries, regulators, chargers, solar"
+    },
+    "actuators": {
+      "enabled": true,
+      "description": "Motors, servos, relays, pumps"
+    },
+    "data_storage": {
+      "enabled": true,
+      "description": "SD card, EEPROM, Flash, cloud"
+    },
+    "user_interface": {
+      "enabled": true,
+      "description": "Display, buttons, LEDs, touch"
+    },
+    "protection_safety_circuits": {
+      "enabled": true,
+      "description": "Fuses, surge protection, isolation, enclosures"
+    }
+  }
+}
